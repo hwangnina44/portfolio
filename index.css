@@ -186,6 +186,8 @@ article.sitemap {
 
 article.sitemap .mapbox {
     width: 100%;
+    border: 2px solid #eee;
+    box-sizing: border-box;
     overflow: hidden;
 
     position: relative;
@@ -196,6 +198,7 @@ article.sitemap .mapbox .view {
 }
 
 .mapbox .view .imgbox {
+    box-sizing: border-box;
     width: 20%;
     float: left;
 }
@@ -221,7 +224,7 @@ article.sitemap .mapbox .pager li {
     width: 10px;
     height: 10px;
     font-size: 0;
-    border-radius: 1000px;
+    border-radius: 100px;
     border: 1px solid #eee;
     float: left;
     margin: 5px;
@@ -258,10 +261,58 @@ article.layout .content-box .btngroup a {
     margin-bottom: 14px;
 }
 
-article.layout .content-box .img-box {
+article.layout .content-box .btngroup a.on {
+    background-color: #000;
+    color: #fff;
+}
+
+article.layout .content-box .des-group {
     width: 45%;
     float: right;
     margin-right: 10%;
+    position: relative;
+}
+
+article.layout .content-box .des-group .concept {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.layout .content-box .des-group .color {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.layout .content-box .des-group .font {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.layout .content-box .des-group .design-des {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.content-box .des-group .design-des .box-wrap {
+    width: 300%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-box .des-group .design-des .next-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
 article.layout .content-box .img-box img {
@@ -279,17 +330,28 @@ article.design .content-box {
 }
 
 article.design .content-box .btngroup {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 article.design .content-box .btngroup a {
     display: inline-block;
 }
+
+/* 
 article.design .content-box .btngroup a.on {
     background-color: #000;
     color: #fff;
 }
-
+article.design .des-group {
+    width: 80%;
+    margin: 0 auto;
+}
+article.design .des-group >div {
+    outline:1px solid red;
+}
+article.design .des-group >div >img {
+    width: 100%;
+}
 article.design .content-box .btngroup a~a {
     margin-left: 12px;
 }
@@ -299,17 +361,16 @@ article.design .content-box .concept {
 }
 
 article.design .content-box .color {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     display: none;
 }
-
+article.design .content-box .font {
+    display: none;
+}
 article.design .content-box .design-des {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     display: none;
-}
+} */
 
 
 article.design .content-box .img-box {
