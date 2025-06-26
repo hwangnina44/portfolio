@@ -133,7 +133,7 @@ article.intro .title p span {
 
 
 article.introduce {
-    /*height: 400px;*/
+    height: 400px;
     background-image: url(img/bg.png);
     background-repeat: repeat-x;
     background-size: auto 100%;
@@ -183,10 +183,24 @@ article.layout .content-box .btngroup {
 article.layout .content-box .btngroup a {
     margin-bottom: 14px;
 }
-article.layout .content-box .img-box {
+
+article.layout .content-box .btngroup a.on {
+    background-color: #333;
+    color: #fff;
+}
+article.layout .content-box .des-box {
     width: 45%;
+    height: 500px;
     float: right;
     margin-right: 10%;
+    position: relative;
+}
+
+article.layout .content-box .des-box .img-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 article.layout .content-box .img-box img {
     width: 100%;
@@ -208,6 +222,60 @@ article.design .content-box .btngroup a {
 }
 article.design .content-box .btngroup a~a {
     margin-left: 12px;
+}
+article.design .content-box .btngroup a.on {
+    background-color: #000;
+    color: #fff;
+}
+
+article.design .content-box .des-group {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+article.design .content-box .des-group .concept {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+article.design .content-box .des-group .color {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.design .content-box .des-group .font {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.design .content-box .des-group .design-des {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.content-box .des-group .design-des .box-wrap {
+    width: 300%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-box .des-group .design-des .next-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
 article.design .content-box .img-box {

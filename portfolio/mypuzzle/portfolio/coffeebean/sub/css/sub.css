@@ -1,0 +1,283 @@
+/*** sub.css ********************/
+@charset "utf-8";
+
+@import url(header.css);
+@import url(footer.css);
+
+/**location***************************************/
+.location {
+    margin-top: 140px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(105,81,157);
+}
+.location ul {
+    width: 1280px;
+    margin: 0 auto;
+    /*outline: 2px solid lime;*/
+}
+.location ul li {
+    float: left;
+    background: url(../img/img_arr_location.png) no-repeat 0 center;
+    padding-left: 25px;
+    margin-right: 20px;
+}
+.location ul li:first-child {
+    background: none;
+    padding-left: 0;
+}
+
+.location a {
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+}
+.location a:hover {
+    text-decoration: underline;
+}
+
+/**main***************************************/
+main {
+    width: 100%;
+}
+main img {
+    width: 100%;
+    display: block;
+}
+
+/**value***************************************/
+.value {
+    width: 100%;
+}
+.value ul {
+    width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(105,81,157);
+}
+/* 1) width, margin 사용 */
+/*.value ul li {
+    width: 340px;
+    background: url(../img/bg_plus_icon.gif) no-repeat 0px 60px;
+    margin: 0 -20px;
+    float: left;
+}
+.value ul li:first-child {
+    background: none;
+}*/
+
+/* 2) after 사용 */
+.value ul li {
+    width: 25%;
+    float: left;
+    position: relative;
+}
+.value ul li:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/bg_plus_icon.gif) no-repeat;
+    position: absolute;
+    top: 60px;
+    left: -20px;
+}
+.value ul li:first-child:after {
+    background: none;
+}
+.value ul li img {
+    width: 160px;
+    display: block;
+    margin: 0 auto 25px;
+}
+.value ul li dl {}
+.value ul li dl dt {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: rgb(105,81,157);
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.value ul li dl dd {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    line-height: 1.4;
+    color: rgb(47,28,17);
+}
+.value ul li dl dd.point {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(105,81,157);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.value .value-des {
+    text-align: center;
+    margin-bottom: 80px;
+    /*background-color: yellow;*/
+}
+.value .value-des .des {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.value .value-des .value-title {
+    font-size: 32px;
+    color: rgb(207,102,26);
+    font-weight: 700;
+}
+
+
+/**specialty***************************************/
+.specialty {
+    width: 100%;
+    margin-bottom: 80px;
+}
+.specialty a {
+    display: block;
+    width: 100%;
+}
+.specialty a img {
+    width: 100%;
+    display: block;
+}
+
+/*specialty 배너 : 배경이미지 테스트*/
+.specialty_bg {
+    margin-top: 100px;
+    width: 100%;
+    height: 540px;
+    background: url(../img/bg_coffeebean-korea_banner02.jpg) no-repeat center/100% auto;
+    background-size: cover;
+    outline: 2px solid red;
+    display: none;
+}
+.specialty_bg a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/**coffee***************************************/
+
+/* coffee&tea 공통 클래스 */
+article .title {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem; /*32px*/
+    color: rgb(207,102,26);
+    letter-spacing: 1.2px;
+    background: url(../img/bg_bar6.gif) repeat-x 0 50%;
+    margin-bottom: 30px;
+}
+article .title span {
+    background-color: #fff;
+    padding: 0 30px;
+}
+article .sub-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgb(207,102,26);
+    margin-bottom: 20px;
+}
+article .description {
+    color: rgb(51,51,51);
+    font-size: 1.15rem;
+    letter-spacing: -0.6px;
+    line-height: 1.4;
+}
+.btn {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: rgb(243,130,0);
+    display: inline-block;
+    padding: 0 50px;
+    line-height: 40px;
+}
+.btn a {
+    display: block;
+    color: #fff;
+}
+
+
+.coffee {
+    margin-bottom: 80px;
+    width: 100%;
+    text-align: center;
+}
+.coffee ul {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    overflow: hidden; /*float해제를 위해 사용!*/
+}
+.coffee ul li {
+    width: 32%;
+    float: left;
+    /*outline: 2px solid red;*/
+}
+.coffee ul li~li {
+    /* 첫번째 li를 제외하고 나머지 li 선택! */
+    margin-left: 2%;
+}
+
+.coffee ul li:hover img {
+    opacity: 0.6;
+}
+.coffee ul li a {
+    display: block;
+}
+.coffee ul li a img {
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
+.tea {
+    width: 100%;
+    margin-bottom: 80px;
+    text-align: center;
+    /*background-color: yellow;*/
+}
+
+.tea ul {
+    width: 100%;
+    margin: 30px 0 60px;
+    /*outline: 3px solid red;*/
+}
+.tea ul li {
+    width: 32%;
+    float: left;
+    overflow: hidden;
+    /*outline: 2px solid red;*/
+}
+.tea ul li~li {
+    margin-left: 2%;
+}
+
+.tea ul li img {
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+}
+.tea ul li:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
