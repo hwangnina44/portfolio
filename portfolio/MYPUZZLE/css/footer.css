@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+footer {
+    width: 100%;
+    background-color: #1B032D;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+    box-sizing: border-box;
+}
+footer .footer-top {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 24px;
+}
+
+footer .footer-top .footer-logo {
+    height: 32px;
+    float: left;
+}
+
+.footer-top .footer-logo img {
+    height: 100%;
+    display: block;
+}
+
+footer .footer-top .info {
+    float: right;
+}
+
+.footer-top .info p {
+    font-size: 12px;
+    margin: 0 4px;
+    display: inline-block;
+}
+.footer-top .info p a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .copyright .info {
+    margin: 24px 0;
+    font-size: 12px;
+}
+
+.copyright .info p {
+    margin-bottom: 8px;
+}
+
+.copyright .info p:first-child {
+    font-weight: 500;
+}
+
+.ccm a {
+    display: inline-block;
+    width: 30px;
+    margin-right: 2%;
+    vertical-align: middle;
+}
+
+.ccm a img {
+    width: 100%;
+    display: block;
+}
+
+.ccm .des {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ccm .des p {
+    font-size: 12px;
+}
+
+
+footer .footer-top .call {
+    text-align: right;
+    margin: 30px 0;
+    font-size: 12px;
+}
+
+.call .callcenter {
+    margin-bottom: 10px;
+}
+
+.call .callcenter p {
+    display: inline-block;
+    font-weight:700;
+    color: #fff;
+    font-size: 26px;
+}
+
+.call .callcenter a.btn {
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-weight: 600;
+    background-image: url(../img/icon/more_w.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.call .time {
+    margin-bottom: 20px;
+}
+.call .time p {
+    font-size: 12px;
+}
+.call .sns-btn {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.call .sns-btn a {
+    width: 32px;
+    height: 32px;
+}
+.call .sns-btn a~a {
+    margin-left: 2%;
+}
+.call .sns-btn a.kakao {
+  background: url(../img/icon/icon_talk.png) no-repeat ;
+  background-size: auto 32px;
+}
+.call .sns-btn a.kakao:hover {
+    background: url(../img/icon/icon_talk_on.png) no-repeat ;
+    background-size: contain;
+}
+.call .sns-btn a.insta {
+    background: url(../img/icon/icon_insta.png) no-repeat;
+    background-size: contain;
+}
+.call .sns-btn a.insta:hover {
+    background: url(../img/icon/icon_insta_on.png) no-repeat;
+    background-size: contain;
+}
+.call .sns-btn a.facebook {
+    background: url(../img/icon/icon_facebook.png) no-repeat;
+    background-size: contain;
+}
+.call .sns-btn a.facebook:hover {
+    background: url(../img/icon/icon_facebook_on.png) no-repeat;
+    background-size: contain;
+}
