@@ -9,38 +9,26 @@ font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 a {
     text-decoration: none;
     color: #333;
     display: block;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     font-weight: 400;
 }
-
 span {
     display: block;
 }
-
-body {
+body{
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;
 }
-
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
 }
-
 div.container {
     width: 100%;
     height: 100%;
@@ -56,7 +44,6 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .clearfix:after {
     content: "";
     display: block;
@@ -69,14 +56,12 @@ h2.sec-tit {
     text-align: center;
     margin-bottom: 80px;
 }
-
 h2 .title-en {
     color: #3A98B9;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
 }
-
 h2 .title-ko {
     font-size: 32px;
 }
@@ -92,7 +77,6 @@ h2 .title-ko {
     color: #888;
     text-align: center;
 }
-
 .btn:hover {
     border-color: #000;
     color: #000;
@@ -110,7 +94,6 @@ article.intro {
     background-position: right;
     position: relative;
 }
-
 article.intro .title {
     width: 50%;
     height: 100%;
@@ -118,29 +101,24 @@ article.intro .title {
     box-sizing: border-box;
     background-color: #fff;
 }
-
 article.intro .title h1 {
     font-size: 3rem;
     padding-top: 100px;
     font-family: 'Nunito', sans-serif;
     margin-bottom: 150px;
 }
-
 article.intro .title h1 span:last-child {
     font-size: 3.6rem;
 }
-
 article.intro .title .producer {
     position: absolute;
     bottom: 20%;
 }
-
 article.intro .title .producer p {
     margin-bottom: 6px;
     font-size: 18px;
-
+    
 }
-
 article.intro .title .producer p:first-child {
     letter-spacing: 1px;
 }
@@ -155,7 +133,7 @@ article.intro .title p span {
 
 
 article.introduce {
-    /* height: 700px; */
+    height: 400px;
     background-image: url(img/bg.png);
     background-repeat: repeat-x;
     background-size: auto 100%;
@@ -163,19 +141,16 @@ article.introduce {
 }
 
 article.introduce .text-box {}
-
 article.introduce .text-box h2 {
     font-size: 32px;
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
 article.introduce .text-box p {
     font-size: 18px;
     font-size: 1.125rem;
     margin-bottom: 40px;
 }
-
 article.introduce .text-box .btn {
     margin-bottom: 60px;
 }
@@ -183,118 +158,106 @@ article.introduce .text-box .btn {
 article.sitemap {
     margin-bottom: 160px;
 }
-
-article.sitemap .mapbox {
-    width: 100%;
-    border: 2px solid #eee;
-    box-sizing: border-box;
-    overflow: hidden;
-
-    position: relative;
-}
-
-article.sitemap .mapbox .view {
-    width: 500%;
-}
-
-.mapbox .view .imgbox {
-    box-sizing: border-box;
-    width: 20%;
-    float: left;
-}
-
+article.sitemap .mapbox {}
 article.sitemap .mapbox img {
     width: 100%;
 }
 
-article.sitemap .mapbox .icon-btn {
-    width: 50px;
-    height: 50px;
-
-}
-
-article.sitemap .mapbox .pager {
-    position: absolute;
-    left: 50%;
-    bottom: 2%;
-    transform: translateX(-50%);
-}
-
-article.sitemap .mapbox .pager li {
-    width: 10px;
-    height: 10px;
-    font-size: 0;
-    border-radius: 100px;
-    border: 1px solid #eee;
-    float: left;
-    margin: 5px;
-}
-
-
-.mapbox .icon-btn img {
-    width: 100%;
-}
-
-
 article.layout {
     margin-bottom: 160px;
 }
-
 article.layout h2.sec-tit {
-    margin-bottom: 50px;
+    margin-bottom:50px;
 }
-
 article.layout .content-box {
     background-image: url(img/bg_horizontal.png);
     background-repeat: repeat-y;
     background-size: 100% auto;
     padding: 60px 0;
 }
-
 article.layout .content-box .btngroup {
     padding-left: 5%;
     float: left;
     margin-top: 50px;
 }
-
 article.layout .content-box .btngroup a {
     margin-bottom: 14px;
 }
 
 article.layout .content-box .btngroup a.on {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
 }
-
-article.layout .content-box .des-group {
+article.layout .content-box .des-box {
     width: 45%;
+    height: 500px;
     float: right;
     margin-right: 10%;
     position: relative;
 }
 
-article.layout .content-box .des-group .concept {
+article.layout .content-box .des-box .img-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+article.layout .content-box .img-box img {
+    width: 100%;
+    display: block;
+}
+
+
+article.design {
+    margin-bottom: 160px;
+}
+article.design .content-box {
+    text-align: center;
+}
+article.design .content-box .btngroup {
+    margin-bottom: 120px;
+}
+article.design .content-box .btngroup a {
+    display: inline-block;
+}
+article.design .content-box .btngroup a~a {
+    margin-left: 12px;
+}
+article.design .content-box .btngroup a.on {
+    background-color: #000;
+    color: #fff;
+}
+
+article.design .content-box .des-group {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+article.design .content-box .des-group .concept {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+article.design .content-box .des-group .color {
     display: none;
     position: absolute;
     left: 0;
     top: 0;
 }
 
-article.layout .content-box .des-group .color {
+article.design .content-box .des-group .font {
     display: none;
     position: absolute;
     left: 0;
     top: 0;
 }
 
-article.layout .content-box .des-group .font {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-article.layout .content-box .des-group .design-des {
+article.design .content-box .des-group .design-des {
     position: absolute;
     left: 0;
     top: 0;
@@ -315,68 +278,9 @@ article.layout .content-box .des-group .design-des {
 
 }
 
-article.layout .content-box .img-box img {
-    width: 100%;
-    display: block;
-}
-
-
-article.design {
-    margin-bottom: 160px;
-}
-
-article.design .content-box {
-    text-align: center;
-}
-
-article.design .content-box .btngroup {
-    margin-bottom: 60px;
-}
-
-article.design .content-box .btngroup a {
-    display: inline-block;
-}
-
-/* 
-article.design .content-box .btngroup a.on {
-    background-color: #000;
-    color: #fff;
-}
-article.design .des-group {
-    width: 80%;
-    margin: 0 auto;
-}
-article.design .des-group >div {
-    outline:1px solid red;
-}
-article.design .des-group >div >img {
-    width: 100%;
-}
-article.design .content-box .btngroup a~a {
-    margin-left: 12px;
-}
-
-article.design .content-box .concept {
-    display: none;
-}
-
-article.design .content-box .color {
-    display: none;
-}
-article.design .content-box .font {
-    display: none;
-}
-article.design .content-box .design-des {
-    display: flex;
-    flex-direction: row;
-    display: none;
-} */
-
-
 article.design .content-box .img-box {
     width: 100%;
 }
-
 article.design .content-box .img-box img {
     width: 100%;
     display: block;
@@ -385,11 +289,9 @@ article.design .content-box .img-box img {
 article.website {
     margin-bottom: 160px;
 }
-
 article.website .btn {
     margin: 0 auto;
 }
-
 article.website .btn:hover {
     background-color: #3A98B9;
     border-color: #3A98B9;
@@ -402,26 +304,26 @@ footer {
     text-align: center;
     color: #fff;
 }
-
 footer .name {
     margin-bottom: 20px;
 }
-
 footer .name span:first-child {
     font-weight: 100;
 }
-
 footer .name span:last-child {
     font-size: 24px;
     font-weight: 100;
 }
-
 footer p {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 20px; 
     color: #ccc;
 }
-
 footer p b {
     margin-right: 6px;
 }
+
+
+
+
+

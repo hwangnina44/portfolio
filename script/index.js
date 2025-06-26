@@ -56,6 +56,37 @@ $(document).ready(function () {
         $(this).addClass('on').siblings().removeClass('on');
     });
 
+    
+    $(".content-box .des-group div.con1").fadeIn().siblings().hide();
+
+   
+    $(".content-box a.con1").click(function (e) {
+        e.preventDefault();
+        $(".content-box .des-box div.con1").fadeIn().siblings().fadeOut();
+    });
+    
+    
+    $(".content-box a.con2").click(function (e) {
+        e.preventDefault();
+        $(".content-box .des-box div.con2").fadeIn().siblings().fadeOut();
+    });
+
+    
+    $(".content-box a.con3").click(function (e) {
+        e.preventDefault();
+        $(".content-box .des-box div.con3").fadeIn().siblings().fadeOut();
+    });
+
+    
+});
+
+$(document).ready(function () {
+
+    // 버튼 on 클래스 토글
+    $(".content-box a.btn").click(function () {
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+
     // 초기 설정: concept 보이기, 나머지는 fadeOut
     $(".content-box .des-group div.concept").fadeIn().siblings().hide();
 

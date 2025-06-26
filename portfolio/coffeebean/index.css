@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+/***RESET********************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.inner {
+    width: 1280px;
+    margin: 0 auto;
+    /*outline: 2px solid red;*/
+}
+.sec-tit {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 28px;
+    color: rgb(207,102,26);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/***HEADER*********************************************/
+header {
+    width: 100%;
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    /*height: 120px;*/
+}
+header .lnb {
+    width: 100%;
+    background-color: lightgray;
+    height: 40px;
+    line-height: 40px;
+}
+/*header .lnb .inner {
+    height: 100%;
+}*/
+header .lnb ul {
+    float: right;
+}
+header .lnb ul li {
+    float: left;
+    margin-right: 20px;
+}
+header .lnb ul li:last-child {
+    margin-right: 0;
+    width: 60px;
+    height: 40px; /*상위요소 .lnb의 높이만큼!*/
+    background: rgb(47,28,17) url(img/ico_user_info_line.png) no-repeat center;
+    /*text-indent: -9999px;*/
+    font-size: 0;
+}
+header .lnb ul li a {
+    color: #333;
+    display: block;
+}
+header .lnb ul li a:hover {
+    font-weight: bold;
+    color: rgb(47,28,17);
+}
+
+header > .inner {
+    height: 100px;
+}
+header .logo {
+    /*width: 70px;*/
+    height: 100%; /*컨텐츠의 높잇값, 패딩, 보더 포함 안 됨*/
+    padding: 15px 0;
+    box-sizing: border-box;
+    /*background-color: yellow;*/
+    float: left;
+}
+header .logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+header .logo img {
+    /*width: 50%;*/
+    height: 70px;
+}
+
+header nav {
+    float: left;
+    margin-left: 100px;
+   /* background-color: darkseagreen;*/
+}
+header nav ul {}
+header nav ul li {
+    float: left;
+    margin: 0 30px;
+    line-height: 100px;
+}
+header nav ul li a {
+    text-transform: uppercase;
+    font-family: Arial;
+    color: rgb(47,28,17);
+    font-weight: 700;
+}
+
+header nav ul li.active a {
+    color: rgb(207,102,26);
+}
+
+header nav ul li a:hover {
+    color: rgb(207,102,26);
+}
+
+header #btnSearch {
+    float: right;
+}
+header #btnSearch a {
+    width: 20px;
+    height: 100px;
+    display: block;
+    background: url(img/ico_search.png) no-repeat center;
+    /*font-size: 0;*/
+    text-indent: -9999px;
+}
+
+
+/***MAIN*********************************************/
+.main {
+    margin-top: 140px;
+    width: 100%;
+    height: 500px;
+    /*background: url(img/main01.jpg) no-repeat center top/cover;*/
+    background-size: cover;
+    background-image: url(img/main01.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.main .inner {
+    position: relative;
+    height: 100%;
+    /*outline: 3px solid lime;*/
+}
+.main .inner p {
+    /*display: none;*/
+    /*font-size: 0;*/
+    /*text-indent: -9999px;*/
+    opacity: 0;
+}
+.main .inner a { /*자세히보러가기 버튼*/
+    font-size: 18px;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    left: 130px;
+    bottom: 170px;
+}
+
+/***SECTION*********************************************/
+
+/**SECTION1. Event**/
+section .event {
+    width: 100%;
+}
+section .event a {
+    display: block;
+}
+section .event a img {
+    width: 100%;
+    display: block;
+}
+
+
+/**SECTION2. MD'S pick**/
+section .md-pick {
+    width: 1280px;
+    margin: 60px auto 80px;
+}
+/*section .md-pick h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 28px;
+    color: rgb(207,102,26);
+    text-align: center;
+    margin-bottom: 40px;
+}*/
+section .md-pick .md-wrap {
+    width: 100%;
+    /*outline: 2px solid red;*/
+}
+section .md-pick .md-wrap .md-box {
+    width: 25%;
+    float: left;
+    /*outline: 2px solid red;*/
+}
+.md-wrap .md-box .photo {
+    position: relative; /*.quick 의 기준!*/
+    margin-bottom: 30px;
+}
+.md-wrap .md-box .photo img {
+    width: 100%;
+}
+.md-wrap .md-box .photo .quick {
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    background-color: rgb(243,130,0);
+    padding: 10px 20px;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+    display: none;
+}
+.md-wrap .md-box .photo:hover img {
+    opacity: 0.4;
+    transition: all .5s ease-in;
+}
+.md-wrap .md-box .photo:hover .quick {
+    display: inline-block;
+}
+
+.md-wrap .md-box .text-box {
+    text-align: center;
+}
+.md-wrap .md-box .text-box .name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.md-wrap .md-box .text-box .des {
+    line-height: 40px;
+}
+.md-wrap .md-box .text-box .price {
+    line-height: 30px;
+    font-weight: 700;
+    color: rgb(207,102,26);
+}
+
+
+/**SECTION3. What's NEW**/
+section .new {
+    width: 1280px;
+    margin: 0 auto 80px;
+}
+/*
+section .new h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 28px;
+    color: rgb(207,102,26);
+    text-align: center;
+    margin-bottom: 40px;
+}
+*/
+section .new .box {
+    width: 32%;
+    float: left;
+    /*outline: 2px solid red;*/
+}
+section .new .box~.box {
+    margin-left: 2%;
+}
+section .new .box a {
+    display: block;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: yellow;
+}
+.new .box a img {
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.new .box a:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+} 
+.new .box p {
+    font-family: 'Nanum Myeongjo', serif;
+    text-align:center;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(207,102,26);
+}
+
+/**SECTION4. Instagram**/
+section .instagram {
+    width: 100%;
+    background-color: rgb(124,81,161);
+    padding: 60px 0 50px;
+    text-align: center;
+}
+
+section .instagram h2 {
+    color: #fff;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+section .instagram .img-wrap {
+    width: 1280px;
+    margin: 0 auto 40px;
+    background-color: rgb(243,130,0);
+}
+.img-wrap .img-box {
+    width: 16.66%;
+    float: left;
+}
+.img-wrap .img-box a {
+    display: block;
+}
+.img-wrap .img-box a img {
+    display: block;
+    width: 100%;
+    /*transition: all 0.6s;*/
+}
+.img-wrap .img-box:hover img {
+    opacity: 0.6;
+}
+
+.instagram > a {
+    color: #fff;
+    background-color: rgb(243,130,0);
+    font-family: 'Nanum Myeongjo', serif;
+    display: block;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/***footer************************************************/
+footer {
+    width: 100%;
+    background-color: lightgray;
+    padding: 60px 0;
+}
+footer a {
+    color: #333;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .sitemap {
+    margin-bottom: 60px;
+    /*background-color: yellow;*/
+}
+footer .sitemap .mapbox {
+    width: 16.66%;
+    float: left;
+}
+footer .sitemap .mapbox h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    color: rgb(207,102,26);
+    margin-bottom: 20px;
+}
+footer .sitemap .mapbox ul {}
+footer .sitemap .mapbox ul li {
+    /*margin-bottom: 10px;*/
+    line-height: 30px;
+    letter-spacing: -0.4px;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 30px;
+}
+footer .footer-bottom .left-box {
+    float: left;
+}
+footer .footer-bottom .left-box .links {
+    margin-bottom: 20px;
+}
+footer .footer-bottom .left-box .links a {
+    border-right: 2px solid #333;
+    padding-right: 8px;
+    padding-left: 6px;
+}
+footer .footer-bottom .left-box .links a:first-child {
+    padding-left: 0;
+}
+footer .footer-bottom .left-box .links a:last-child {
+    border: 0;
+}
+footer .footer-bottom .sns {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+

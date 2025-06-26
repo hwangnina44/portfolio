@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* responsive - mobile */
+/* max-width: 767px */
+
+/* body {
+    background-color: lightgreen;
+} */
+
+header .logo img {
+    height: 40px;
+    margin-top: 10px;
+}
+header .m-menu img {
+    height: 40px;
+    margin-top: 10px;
+}
+
+article.intro {
+    /* outline: 2px solid blue; */
+
+    height: auto;
+    position: static;
+    padding-top: 24px;
+    padding-bottom: 300px; /* 배경이미지를 넣을 공간! */
+    background-size: auto 300px;
+    background-position: right bottom;
+}
+
+article.intro .txt-box {
+    position: static;
+    width: 100%;
+    margin-bottom: 40px;
+}
+article.intro .btn{
+    position: static;
+    margin-bottom: 40px;
+}
+
+article.works .img-wrap .img-box {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+}
+article.works .img-wrap .img-box~.img-box {
+    margin-left: 0;
+}
+
+article.about p {
+    width: 100%;
+}
+
+article.news .sec-tit {
+    text-align: center;
+    margin-bottom: 20px;
+}
+article.news > p {
+    text-align: center;
+}
+
+article.news .box-wrap .box {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+}
+article.news .box-wrap .box~.box {
+    margin-left: 0;
+}
+
+section.contact {
+    padding: 80px 20px 120px;
+    box-sizing: border-box;
+}
+section.contact .sec-tit {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+}
+section.contact p {
+    word-break: keep-all;
+}
+
+footer {
+    padding: 50px 0;
+}
+footer .footer-box h3 {
+    font-size: 16px;
+    font-size: 1rem;
+}
+footer .footer-box p {
+    font-size: 15px;
+    font-size: 0.9375rem;
+}
+footer .top {
+    right: 10%;
+    bottom: 210px;
+}
