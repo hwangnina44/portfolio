@@ -9,26 +9,38 @@ font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
     color: #333;
     display: block;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: 100%;
     font-weight: 400;
 }
+
 span {
     display: block;
 }
-body{
+
+body {
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;
 }
-html, body {
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
+
 div.container {
     width: 100%;
     height: 100%;
@@ -41,9 +53,10 @@ footer {
 
 .inbox {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1290px;
     margin: 0 auto;
 }
+
 .clearfix:after {
     content: "";
     display: block;
@@ -56,12 +69,14 @@ h2.sec-tit {
     text-align: center;
     margin-bottom: 80px;
 }
+
 h2 .title-en {
     color: #3A98B9;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
 }
+
 h2 .title-ko {
     font-size: 32px;
 }
@@ -77,6 +92,7 @@ h2 .title-ko {
     color: #888;
     text-align: center;
 }
+
 .btn:hover {
     border-color: #000;
     color: #000;
@@ -86,125 +102,162 @@ h2 .title-ko {
 
 
 /*******************************************************/
+header {
+    width: 100%;
+    height: 24px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700px;
+
+}
+
 article.intro {
     width: 100%;
     height: 100%;
-    background: #FFF1DC url(img/intro.jpg) no-repeat;
-    background-size: auto 100%;
-    background-position: right;
     position: relative;
 }
+
 article.intro .title {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     background-color: #fff;
+    position: relative;
 }
+
 article.intro .title h1 {
-    font-size: 3rem;
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 150px;
-    position: absolute;
-    left: 5%;
-    bottom: 0;
+    text-align: center;
+    font-size: 16rem;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
 }
-article.intro .title h1 span:first-child {
-    font-size: 10rem;
-    font-weight: 900;
+
+article.intro .title p {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+article.intro .title p span:first-child {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+article.intro .title p span:last-child {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 7px;
 }
 
 
 article.introduce {
-    height: 400px;
-    background-image: url(img/bg.png);
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg_img.jpg);
     background-repeat: repeat-x;
     background-size: auto 100%;
-    padding: 120px 5% 160px;
+    position: relative;
+    margin-bottom: 120px;
 }
 
-article.introduce .text-box {}
+article.introduce .text-box {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: #fff;
+}
+
 article.introduce .text-box h2 {
     font-size: 32px;
     font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 20px;
 }
+
 article.introduce .text-box p {
     font-size: 18px;
     font-size: 1.125rem;
-    margin-bottom: 40px;
-}
-article.introduce .text-box .btn {
-    margin-bottom: 60px;
+    margin-bottom: 16px;
 }
 
+article.introduce .text-box p~p {
+    font-weight: 700;
+}
+
+
 article.sitemap {
+    width: 100%;
     margin-bottom: 160px;
 }
-article.sitemap .mapbox {}
+article.sitemap .mapbox {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+article.sitemap .mapbox .view {
+    width: 300%;
+    display: flex;
+    flex-direction: row;
+}
+article.sitemap .mapbox .view .img-box {
+    width: 100%;
+}
 article.sitemap .mapbox img {
     width: 100%;
 }
-
-article.layout {
-    margin-bottom: 160px;
+article.sitemap .mapbox .slide-btn {
+    width: 50px;
 }
-article.layout h2.sec-tit {
-    margin-bottom:50px;
-}
-article.layout .content-box {
-    background-image: url(img/bg_horizontal.png);
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-    padding: 60px 0;
-}
-article.layout .content-box .btngroup {
-    padding-left: 5%;
-    float: left;
-    margin-top: 50px;
-}
-article.layout .content-box .btngroup a {
-    margin-bottom: 14px;
-}
-
-article.layout .content-box .btngroup a.on {
-    background-color: #333;
-    color: #fff;
-}
-article.layout .content-box .des-box {
-    width: 45%;
-    height: 500px;
-    float: right;
-    margin-right: 10%;
-    position: relative;
-}
-
-article.layout .content-box .des-box .img-box {
+article.sitemap .mapbox .slide-btn img {
     width: 100%;
+}
+article.sitemap .mapbox .prev-btn {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
-article.layout .content-box .img-box img {
-    width: 100%;
-    display: block;
+article.sitemap .mapbox .next-btn {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
-
+ 
 
 article.design {
     margin-bottom: 160px;
 }
+
 article.design .content-box {
     text-align: center;
 }
+
 article.design .content-box .btngroup {
     margin-bottom: 120px;
 }
+
 article.design .content-box .btngroup a {
     display: inline-block;
 }
+
 article.design .content-box .btngroup a~a {
     margin-left: 12px;
 }
+
 article.design .content-box .btngroup a.on {
     background-color: #000;
     color: #fff;
@@ -263,6 +316,7 @@ article.design .content-box .des-group .design-des {
 article.design .content-box .img-box {
     width: 100%;
 }
+
 article.design .content-box .img-box img {
     width: 100%;
     display: block;
@@ -271,9 +325,15 @@ article.design .content-box .img-box img {
 article.website {
     margin-bottom: 160px;
 }
-article.website .btn {
-    margin: 0 auto;
+article.website div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 }
+article.website .btn {
+}
+
 article.website .btn:hover {
     background-color: #3A98B9;
     border-color: #3A98B9;
@@ -286,26 +346,26 @@ footer {
     text-align: center;
     color: #fff;
 }
+
 footer .name {
     margin-bottom: 20px;
 }
+
 footer .name span:first-child {
     font-weight: 100;
 }
+
 footer .name span:last-child {
     font-size: 24px;
     font-weight: 100;
 }
+
 footer p {
     display: inline-block;
-    margin-right: 20px; 
+    margin-right: 20px;
     color: #ccc;
 }
+
 footer p b {
     margin-right: 6px;
 }
-
-
-
-
-
