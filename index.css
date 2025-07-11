@@ -202,29 +202,37 @@ article.sitemap {
     width: 100%;
     margin-bottom: 160px;
 }
+
 article.sitemap .mapbox {
     width: 80%;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
 }
+
 article.sitemap .mapbox .view {
     width: 300%;
     display: flex;
     flex-direction: row;
 }
+
+
 article.sitemap .mapbox .view .img-box {
     width: 100%;
 }
+
 article.sitemap .mapbox img {
     width: 100%;
 }
+
 article.sitemap .mapbox .slide-btn {
     width: 50px;
 }
+
 article.sitemap .mapbox .slide-btn img {
     width: 100%;
 }
+
 article.sitemap .mapbox .prev-btn {
     position: absolute;
     left: 2%;
@@ -232,6 +240,7 @@ article.sitemap .mapbox .prev-btn {
     transform: translateY(-50%);
     cursor: pointer;
 }
+
 article.sitemap .mapbox .next-btn {
     position: absolute;
     right: 2%;
@@ -239,7 +248,28 @@ article.sitemap .mapbox .next-btn {
     transform: translateY(-50%);
     cursor: pointer;
 }
- 
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 article.design {
     margin-bottom: 160px;
@@ -328,13 +358,12 @@ article.design .content-box .img-box img {
 article.website {
     margin-bottom: 160px;
 }
+
 article.website div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-}
-article.website .btn {
 }
 
 article.website .btn:hover {
@@ -342,6 +371,39 @@ article.website .btn:hover {
     border-color: #3A98B9;
     color: #fff;
 }
+
+article.clone {
+    margin-bottom: 160px;
+
+}
+
+article.clone div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+article.clone div a {
+    width: 200px;
+    height: 180px;
+    padding: 28px;
+    box-sizing: border-box;
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+article.clone div a img {
+    width: 100%;
+    display: block;
+
+}
+
 
 footer {
     width: 100%;
