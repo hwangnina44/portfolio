@@ -1,5 +1,27 @@
 $(document).ready(function () {
 
+    ////인트로 페이지
+    setTimeout(function() {
+        $("header").animate({
+            opacity: 1
+        }, 1000);
+    }, 3000);
+
+    setTimeout(function() {
+        $("nav").animate({
+            opacity: 1
+        }, 1000);
+    }, 3000);
+
+    setTimeout(function() {
+        $("article.intro .title p").animate({
+            opacity: 1
+        }, 1000);
+    }, 3000);
+
+
+    
+
     var swiper = new Swiper(".mySwiper", {
         navigation: {
             nextEl: ".swiper-button-next",
