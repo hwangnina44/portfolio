@@ -279,7 +279,6 @@ article.intro .title h1 span:nth-child(10) {
 
 article.intro .title p {
     font-size: 24px;
-    font-weight: 600;
     text-align: center;
     color: #bbb;
     opacity: 0;
@@ -436,7 +435,7 @@ article.design .content-box .btngroup a.on {
 
 article.design .content-box .des-group {
     width: 80%;
-    height: 600px;
+    height:100%;
     margin: 0 auto;
     position: relative;
 }
