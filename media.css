@@ -16,7 +16,7 @@
         left:2%;
         bottom: 2%;
         padding: 0 20px;
-        box-sizing: ;
+        box-sizing: border-box;
     }
 }
 @media all and (max-width: 1024px) {
