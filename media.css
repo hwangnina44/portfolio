@@ -1,0 +1,36 @@
+@charset "utf-8";
+@media all and (max-width: 1440px) {
+    body {
+        font-size: 14px;
+    }
+    nav {
+        display: none;  
+    }
+    article.intro .title h1 {
+        font-size: 8rem;
+    }
+    article.introduce .text-box p {
+        font-size: 14px;
+    }
+    article.introduce .text-box  {
+        left:2%;
+        bottom: 2%;
+    }
+}
+@media all and (max-width: 1024px) {
+    article.intro .title h1 {
+        font-size: 4rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    article.introduce {
+        height: 50%;
+        background-image: url(img/bg_img2.jpg);
+    }
+    article.introduce .text-box .img-box img {
+        width: 32px;
+    }
+}
+
