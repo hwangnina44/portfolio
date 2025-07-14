@@ -159,13 +159,13 @@ nav ul li a {
 nav ul li:hover a {
     color: #000;
     font-weight: 700;
-   
+
 }
 
 nav ul li:hover::after {
     background-color: #666;
     height: 3px;
-   
+
 }
 
 nav ul li::after {
@@ -175,9 +175,9 @@ nav ul li::after {
     height: 1px;
     background-color: #eee;
     position: absolute;
-    left:8px;
+    left: 8px;
     top: 20px;
-    
+
 }
 
 article.intro {
@@ -304,8 +304,9 @@ article.introduce {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     margin-bottom: 120px;
+    position: relative;
+
 }
 
 article.introduce .text-box {
@@ -328,6 +329,7 @@ article.introduce .text-box p {
     margin-bottom: 16px;
     font-weight: 600;
 }
+
 article.introduce .text-box .img-box img {
     display: inline-block;
     width: 48px;
@@ -386,7 +388,6 @@ article.sitemap .mapbox .next-btn {
     cursor: pointer;
 }
 
-
 .swiper {
     width: 100%;
     height: 100%;
@@ -409,7 +410,9 @@ article.sitemap .mapbox .next-btn {
 }
 
 article.design {
+    width: 100%;
     margin-bottom: 160px;
+    overflow: hidden;
 }
 
 article.design .content-box {
@@ -417,7 +420,7 @@ article.design .content-box {
 }
 
 article.design .content-box .btngroup {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 article.design .content-box .btngroup a {
@@ -433,66 +436,43 @@ article.design .content-box .btngroup a.on {
     color: #fff;
 }
 
-article.design .content-box .des-group {
+article.design .des-group {
     width: 80%;
-    height:100%;
     margin: 0 auto;
     position: relative;
 }
 
-article.design .content-box .des-group .concept {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-article.design .content-box .des-group .color {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-article.design .content-box .des-group .font {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-article.design .content-box .des-group .design-des {
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-}
-
-.content-box .des-group .design-des .box-wrap {
-    width: 300%;
-    display: flex;
-    flex-direction: row;
-}
-
-.content-box .des-group .design-des .next-btn {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-
-}
-
-article.design .content-box .img-box {
+article.design .des-group .des-group-wrap {
     width: 100%;
+    height: 800px;
+    position: relative;
 }
 
-article.design .content-box .img-box img {
+article.design .des-group .img-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+article.design .des-group .img-box.font {
+    display: none;
+}
+article.design .des-group .img-box.design-des {
+    display: none;
+}
+
+article.design .img-box img {
     width: 100%;
     display: block;
 }
 
+
+
+
+
 article.website {
+    width: 100%;
     margin-bottom: 160px;
 }
 
@@ -510,6 +490,8 @@ article.website .btn:hover {
 }
 
 article.clone {
+    width: 100%;
+    height: 50%;
     margin-bottom: 160px;
 
 }
@@ -571,4 +553,3 @@ footer p {
 footer p b {
     margin-right: 6px;
 }
-

@@ -44,22 +44,18 @@ $(document).ready(function () {
 
     $(".content-box a.concept").click(function (e) {
         e.preventDefault();
-        $(".content-box .des-group div.concept").fadeIn().siblings().fadeOut();
+        $(".des-group div.concept").fadeIn().siblings().fadeOut();
     });
 
-    $(".content-box a.color").click(function (e) {
-        e.preventDefault();
-        $(".content-box .des-group div.color").fadeIn().siblings().fadeOut();
-    });
 
     $(".content-box a.font").click(function (e) {
         e.preventDefault();
-        $(".content-box .des-group div.font").fadeIn().siblings().fadeOut();
+        $(" .des-group div.font").fadeIn().siblings().fadeOut();
     });
 
     $(".content-box a.design-des").click(function (e) {
         e.preventDefault();
-        $(".content-box .des-group div.design-des").fadeIn().siblings().fadeOut();
-    });
+        $(".des-group div.design-des").fadeIn().siblings().fadeOut();
+    }); 
 
 });
