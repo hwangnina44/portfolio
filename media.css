@@ -26,6 +26,7 @@
 }
 
 @media all and (max-width: 1024px) {
+
     .container>article {
         margin-bottom: 60px;
     }
@@ -33,9 +34,33 @@
     article.intro .title h1 {
         font-size: 4rem;
     }
+
+    article.design .des-group .des-group-wrap {
+        height: 440px;
+    }
 }
 
 @media all and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h2 .title-en {
+        font-size: 16px;
+    }
+
+    h2 .title-ko {
+        font-size: 24px;
+    }
+    h2.sec-tit {
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        width: 120px;
+        font-size: 14px;
+    }
+
 
     article.introduce {
         width: 100%;
@@ -60,19 +85,56 @@
         background-color: rgba(0, 0, 0, 0.3);
     }
 
+    article.sitemap .mapbox {
+        width: 100%;
+    }
+
+    article.design .des-group {
+        width: 100%;
+    }
+
     article.introduce .text-box .img-box img {
         width: 32px;
     }
 
+    article.design .des-group .des-group-wrap {
+        height: 340px;
+    }
+
     article.clone {
         width: 100%;
-        height: 100%;
         margin-bottom: 60px;
     }
 }
 
 @media all and (max-width: 480px) {
+    h2 .title-en {
+        font-size: 14px;
+    }
+
+    h2 .title-ko {
+        font-size: 20px;
+    }
+
+    h2.sec-tit {
+        margin-bottom: 20px;
+    }
+
+    article.intro .title h1 {
+        font-size: 3rem;
+    }
+
+    article.design .des-group .des-group-wrap {
+        height: 200px;
+    }
+
     .btn {
-        width: 120px;
+        width: 80px;
+        padding: 6px 0;
+    }
+
+    article.website .btn {
+        width: 100px;
+        padding: 8px 16px;
     }
 }
