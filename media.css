@@ -60,6 +60,10 @@
         width: 120px;
         font-size: 14px;
     }
+    article.intro .title h1 {
+        font-size: 3rem;
+    }
+
 
 
     article.introduce {
