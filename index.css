@@ -43,8 +43,6 @@ body {
 
 html,
 body {
-    width: 100%;
-    height: 100%;
     position: relative;
 }
 
@@ -53,20 +51,7 @@ div.container {
     height: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 24px;
     box-sizing: border-box;
-}
-
-.inbox {
-    width: 90%;
-    max-width: 1290px;
-    margin: 0 auto;
-}
-
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 
@@ -85,6 +70,7 @@ h2 .title-en {
 
 h2 .title-ko {
     font-size: 32px;
+    font-weight: 700;
 }
 
 /* 버튼 공통 */
@@ -103,9 +89,6 @@ h2 .title-ko {
     border-color: #000;
     color: #000;
 }
-
-
-
 
 /*******************************************************/
 header {
@@ -173,13 +156,13 @@ nav ul li::after {
 
 article.intro {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
 }
 
 article.intro .title {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     background-color: #fff;
     display: flex;
@@ -290,7 +273,7 @@ article.intro .title p span:last-child {
 
 article.introduce {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url(img/bg_img.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -302,15 +285,15 @@ article.introduce {
 
 article.introduce .text-box {
     position: absolute;
-    left: 10%;
-    bottom: 10%;
+    left: 2%;
+    bottom: 2%;
     color: #fff;
 }
 
 article.introduce .text-box h2 {
     font-size: 32px;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
     margin-bottom: 20px;
 }
 
@@ -318,7 +301,16 @@ article.introduce .text-box p {
     font-size: 18px;
     font-size: 1.25rem;
     margin-bottom: 16px;
-    font-weight: 600;
+}
+
+article.introduce .text-box p.tool{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+article.introduce .text-box p.period {
+    font-size: 18px;
+    font-weight: 700;
 }
 
 article.introduce .text-box .img-box img {
@@ -330,7 +322,7 @@ article.introduce .text-box .img-box img {
 
 article.sitemap {
     width: 100%;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 
 article.sitemap .mapbox {
@@ -363,21 +355,7 @@ article.sitemap .mapbox .slide-btn img {
     width: 100%;
 }
 
-article.sitemap .mapbox .prev-btn {
-    position: absolute;
-    left: 2%;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
 
-article.sitemap .mapbox .next-btn {
-    position: absolute;
-    right: 2%;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
 
 .swiper {
     width: 100%;
@@ -390,6 +368,8 @@ article.sitemap .mapbox .next-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
 }
 
 .swiper-slide img {
@@ -401,7 +381,7 @@ article.sitemap .mapbox .next-btn {
 
 article.design {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
 }
 
 article.design .content-box {
@@ -433,9 +413,9 @@ article.design .des-group {
 
 article.design .des-group .des-group-wrap {
     width: 100%;
-    height: 820px;
+    height: 780px;
     position: relative;
-    overflow: hidden;
+   
 }
 
 article.design .des-group .img-box {
@@ -443,6 +423,8 @@ article.design .des-group .img-box {
     position: absolute;
     left: 0;
     top: 0;
+    border: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
 }
 
 article.design .des-group .img-box.font {
@@ -459,7 +441,7 @@ article.design .img-box img {
 
 article.website {
     width: 100%;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 
 article.website div {
@@ -477,7 +459,7 @@ article.website .btn:hover {
 
 article.clone {
     width: 100%;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
 }
 
 article.clone div {
@@ -509,9 +491,11 @@ article.clone div a img {
 
 footer {
     width: 100%;
+    padding: 40px 60px;
     background-color: #000;
     text-align: center;
     color: #fff;
+    box-sizing: border-box;
 }
 
 footer .name {
