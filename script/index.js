@@ -23,17 +23,22 @@ $(document).ready(function () {
     
 
     var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView:"auto",
         loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         },
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true,
         },
       });
-
     // 
     $(".content-box a.btn").click(function () {
         $(this).addClass('on').siblings().removeClass('on');
@@ -56,6 +61,11 @@ $(document).ready(function () {
     $(".content-box a.design-des").click(function (e) {
         e.preventDefault();
         $(".des-group div.design-des").fadeIn().siblings().fadeOut();
+    }); 
+
+    $(".clone-box .box.the-more a").click(function (e) {
+        e.preventDefault();
+        alert("준비중입니다!");
     }); 
 
 });

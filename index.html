@@ -9,9 +9,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Nunito:wght@200;300;400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- 파비콘 -->
     <link rel="stylesheet" href="index.css">
-   <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script/jquery-1.12.4.min.js"></script>
@@ -20,24 +22,20 @@
 
 <body>
     <header>
-        <p>2025</p>
-        <p>Portfolio</p>
-        <p>hwangnina</p>
-    </header> 
-    <!-- 
+        <h1>Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#introduce">기획의도</a></li>
-                <li><a href="#sitemap">웹 기획</a></li>
-                <li><a href="#design">디자인 시안</a></li>
-                <li><a href="#clone">반응형 웹사이트</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#puzzle">redesign</a></li>
+                <li><a href="#clone">clone</a></li>
             </ul>
-        </nav> -->
+    </header>
 
-    <div class="container">
-        <article class="intro">
+    <article class="intro">
+        <div class="inner">
             <div class="title">
-                <h1>
+                <h2>
                     <span>p</span>
                     <span>o</span>
                     <span>r</span>
@@ -47,106 +45,159 @@
                     <span>l</span>
                     <span>i</span>
                     <span>o</span>
-                </h1>
-                <p>_ hwang nina ( 황니나 )</p>
-            </div>
-        </article>
-
-        <article class="introduce" id="introduce">
-            <div class="text-box">
-                <h2>Website Redesign</h2>
-                <p>
-                    마이퍼즐은 나에게 꼭 맞는 영양제를 제안하며, 마치 케어받는 듯한 따뜻한 경험을 전하고자 합니다.<br>
-                    건강 설문 과정을 단계별로 구성해 누구나 쉽고 편안하게 참여할 수 있도록 했고,<br>정기구독은 물론 단품 구매도 가능하게 하여 다양한 라이프스타일에 유연하게 어울릴 수 있도록
-                    기획했습니다.
-                </p>
-                <p class="period">개인 프로 젝트 2025 05~ 2025 06</p>
-                <p class="tool">사용툴</p>
-                <div class="img-box">
-                    <img src="img/icon_photoshop.png" alt="포토샵 아이콘">
-                    <img src="img/icon_figma-dark.png" alt="피그마 아이콘">
-                    <img src="img/icons_vscode-dark.png" alt="vscode 아이콘">
-                </div>
-            </div>
-
-        </article>
-
-        <article class="sitemap" id="sitemap">
-            <div>
-                <h2 class="sec-tit">
-                    <span class="title-en">website planning</span>
-                    <span class="title-ko">웹 기획</span>
                 </h2>
+                <!-- <p>_ hwang nina ( 황니나 )</p> -->
+            </div>
+        </div>
+    </article>
 
-                <div class="mapbox">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <img src="img/portfolio2.png" alt="기획의도"></div>
-                            <div class="swiper-slide"> <img src="img/portfolio3.png" alt="기획의도"></div>
-                            <div class="swiper-slide"> <img src="img/portfolio4.png" alt="기획의도"></div>
+    <article class="introduce" id="about">
+        <div class="inner">
+            <div class="content-left">
+                <h2>방법을 찾아내는<br>
+                    퍼블리셔 황니나입니다.
+                </h2>
+                <p>해결방법은 우연히 발견하는것이 아니라<br>
+                    끊이없는 노력과 소통을 통해 찾아낸다고 생각합니다.
+                </p>
+                <p>
+                    어떠한 상황에서도 더 좋은 방법을 찾기위해<br>
+                    포기하지 않고 끝가지 방법을 찾아내겠습니다.
+                </p>
+            </div>
 
-                        </div>
-                        <div class="swiper-pagination"></div>
+            <div class="content-right">
+                <div class="profile">
+                    <h3>profile</h3>
+                    <div class="des">
+                        <p>1994.01.12</p>
+                        <p>010-9019-5376</p>
+                        <p>hnn0070@naver.com</p>
                     </div>
-
+                </div>
+                <div class="edu">
+                    <h3>education</h3>
+                    <div class="des">
+                        <p>창동고등학교
+                            <span>2010.03 ~ 2012.02</span>
+                        </p>
+                        <p>서정대학교
+                            <span>2012.03 ~ 2014.02</span>
+                        </p>
+                        <p>그린 컴퓨터 학원
+                            <span>2025.02 ~ 2025.07</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <h3>experience</h3>
+                    <div class="des">
+                        <p>(주)청년들 [상품기획]
+                            <span>2023.03 ~ 2024.06</span>
+                        </p>
+                        <p>오늘의 꽃 [물류운영]
+                            <span>2019.09 ~ 2021.11</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="tool">
+                    <h3>tools</h3>
+                    <div class="tool-box">
+                        <p class="html">HTML5</p>
+                        <p class="css">CSS3</p>
+                        <p class="js">jQuery</p>
+                        <p class="ps">Photoshop</p>
+                        <p class="figma">Figma</p>
+                        <p class="vscode">VSCode</p>
+                    </div>
                 </div>
             </div>
-        </article>
+        </div>
+    </article>
 
-
-        <article class="design" id="design">
+    <article class="puzzle" id="puzzle">
+        <div class="bg">
+            <p>My<br>Puzzle</p>
+        </div>
+        <div class="inner">
             <h2 class="sec-tit">
-                <span class="title-en">UI Design</span>
-                <span class="title-ko">디자인 시안</span>
+                <span class="title-en">Website Redesign</span>
+                <span class="title-ko">웹 리뉴얼</span>
             </h2>
-            <div class="content-box">
-                <div class="btngroup">
-                    <a href="#" class="btn concept on">컨셉</a>
-                    <a href="#" class="btn font">폰트</a>
-                    <a href="#" class="btn design-des">시안</a>
+            <div class="text-box">
+                <div class="txt">
+                    <p class="period"><span>개인 프로 젝트</span> 2025.05 ~ 2025.06</p>
+                    <p>
+                        마이퍼즐은 나에게 꼭 맞는 영양제를 제안하며<br>마치 케어받는 듯한 따뜻한 경험을 전하고자 합니다.<br>
+                        건강 설문 과정을 단계별로 구성해 누구나 쉽고 편안하게 참여할 수 있도록 했고,<br>정기구독은 물론 단품 구매도 가능하게 하여 다양한 라이프스타일에 <br>
+                        유연하게
+                        어울릴 수
+                        있도록
+                        기획했습니다.
+                    </p>
+                </div>
+                <div class="btn-box">
+                    <a href="https://www.figma.com/design/6ryJG4IGDoZ6txn6eidEFM/My-puzzle--%EB%B3%B5%EC%82%AC-?node-id=1780-2239&t=XjYl1s2Jhp7VizeS-1"
+                        target="_blank" class="btn">마이퍼즐 기획서 </a>
+                    <a href="https://hwangnina44.github.io/MYPUZZLE/" target="_blank" class="btn">마이퍼즐 사이트</a>
                 </div>
             </div>
-
-            <div class="des-group">
-                <div class="des-group-wrap">
-
-                    <div class="img-box concept"><img src="img/portfolio5.png" alt="디자인 시안"></div>
-                    <div class="img-box font"><img src="img/portfolio6.png" alt="디자인 시안"></div>
-                    <div class="img-box design-des"><img src="img/portfolio11.png" alt="디자인 시안"></div>
-
+            <div class="puzzle-img">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/portfolio11.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/portfolio2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/portfolio3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/portfolio4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/portfolio5.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/portfolio6.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/portfolio7.png" />
+                        </div> <div class="swiper-slide">
+                            <img src="img/portfolio8.png" />
+                        </div> <div class="swiper-slide">
+                            <img src="img/portfolio9.png" />
+                        </div> <div class="swiper-slide">
+                            <img src="img/portfolio10.png"/>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </article>
+        </div>
+    </article>
 
-        <article class="website" id="website">
-            <h2 class="sec-tit">
-                <span class="title-en">web site</span>
-                <span class="title-ko">웹사이트 제작</span>
-            </h2>
-
-            <div>
-                <a href="https://www.figma.com/design/6ryJG4IGDoZ6txn6eidEFM/My-puzzle--%EB%B3%B5%EC%82%AC-?node-id=1780-2239&t=XjYl1s2Jhp7VizeS-1"
-                    target="_blank" class="btn">피그마 기획서 </a>
-                <a href="https://hwangnina44.github.io/MYPUZZLE/" target="_blank" class="btn">포트폴리오</a>
-
-            </div>
-
-        </article>
-
-        <article class="clone" id="clone">
+    <article class="clone" id="clone">
+        <div class="inner">
             <h2 class="sec-tit">
                 <span class="title-en">clone coding</span>
-                <span class="title-ko">반응형 웹사이트 </span>
+                <span class="title-ko">반응형 웹사이트</span>
             </h2>
+            <div class="clone-box">
+                <div class="box sk">
+                    <a href="https://hwangnina44.github.io/sk/" target="_blank">
+                        <img src="img/logo_w.png" alt="sk리츠"></a>
+                </div>
+                <div class="box the-more">
+                    <a href="#" target="_blank">
+                        <img src="img/logo_white.png" alt="더모어어"></a>
+                </div>
 
-            <div>
-                <a href="https://hwangnina44.github.io/sk/" target="_blank" class="btn"><img src="img/logo.png"
-                        alt="sk리츠"></a>
-                <a href="https://hwangnina44.github.io/sk/" target="_blank" class="btn">준비중!</a>
             </div>
-
-        </article>
-    </div>
+        </div>
+    </article>
 
     <footer>
         <h2 class="name">
@@ -157,8 +208,6 @@
         <p><b>Email</b>hnn0070@naver.com</p>
         <p><b>Tel</b> 010-9019-5376</p>
     </footer>
-
-
 
 </body>
 
