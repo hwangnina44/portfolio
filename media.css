@@ -252,6 +252,9 @@
 
 
 @media all and (max-width: 320px) {
+     article.introduce .content-left h2 {
+        font-size: 24px;
+    }
     .swiper>.swiper-wrapper>.swiper-slide {
         width: 260px;
     }

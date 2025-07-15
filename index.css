@@ -300,7 +300,7 @@ article.introduce .content-right .tool .tool-box {
     justify-content: start;
     gap: 20px;
     flex-wrap: wrap;
-    width: 180px;
+    width: 140px;
 }
 
 article.introduce .content-right .tool p {
