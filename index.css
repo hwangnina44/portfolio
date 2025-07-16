@@ -250,7 +250,7 @@ article.introduce {
     width: 100%;
     padding:120px 0;
     margin-bottom: 120px;
-    background: url(img/bg4.jpg);
+    background: url(img/bg4.jpg) no-repeat left top/contain;
 }
 
 article.introduce .inner {
