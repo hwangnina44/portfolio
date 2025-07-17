@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("header").animate({
             opacity: 1
         }, 1000);
-    }, 3000);
+    },3000);
 
     setTimeout(function() {
         $("nav").animate({
@@ -16,7 +16,7 @@ $(document).ready(function () {
     setTimeout(function() {
         $("article.intro .title p").animate({
             opacity: 1
-        }, 1000);
+        },1000);
     }, 3000);
 
 
