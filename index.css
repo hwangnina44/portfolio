@@ -141,7 +141,7 @@ article.intro .title {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,28 +226,50 @@ article.intro .title h2 span:nth-child(10) {
     }
 }
 
-/* article.intro .title p {
+article.intro .title p::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #3A98B9;
+    margin-bottom: 10px;
+
+    animation: line 1s forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes line {
+    to {
+        width: 100%;
+    }
+}
+
+article.intro .title p {
+    padding: 40px;
     font-size: 24px;
     text-align: center;
-    color: #bbb;
+    color: #3A98B9;
     opacity: 0;
+    animation-delay: 2.2s;
+    font-family: "Nunito", sans-serif;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2.2s;
 }
- */
+
 article.intro .title p span:first-child {
-    color: #aaa;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 24px;
+    display: inline-block;
 }
 
 article.intro .title p span:last-child {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 7px;
+    font-size: 24px;
+    display: inline-block;
 }
 
 article.introduce {
     width: 100%;
-    padding:120px 0;
+    padding: 120px 0;
     margin-bottom: 120px;
     background: url(img/bg4.jpg) no-repeat left top/contain;
 }
@@ -284,13 +306,15 @@ article.introduce .content-right>div {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    gap: 40px;
+    gap: 60px;
 }
 
 article.introduce .content-right>div>h3 {
+    color: #3A98B9;
+    text-transform: uppercase;
+    font-weight: 700;
     width: 100px;
     font-size: 20px;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -359,7 +383,7 @@ article.puzzle .bg {
     font-family: "Archivo", sans-serif;
     font-size: 15rem;
     font-weight: 900;
-    color: #F8FEFE;
+    color: #f0f0f0;
     position: absolute;
     left: 0;
     top: 10%;
@@ -489,7 +513,7 @@ article.clone .clone-box .box a img {
 footer {
     width: 100%;
     padding: 40px 60px;
-    background-color: #000;
+    background-color: #3FC1C9;
     text-align: center;
     color: #fff;
     box-sizing: border-box;
@@ -505,13 +529,13 @@ footer .name span:first-child {
 
 footer .name span:last-child {
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 footer p {
     display: inline-block;
     margin-right: 20px;
-    color: #ccc;
+    opacity: 0.8;
 }
 
 footer p b {
