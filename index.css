@@ -77,12 +77,12 @@ h2 .title-ko {
 /* 버튼 공통 */
 .btn {
     width: 180px;
-    border: 1px solid #ccc;
+    border: 1px solid #3A98B9;
     padding: 12px 0;
     border-radius: 50px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #888;
+    color: #3A98B9;
     text-align: center;
 }
 
@@ -246,7 +246,7 @@ article.intro .title p::before {
 }
 
 article.intro .title p {
-    padding: 40px;
+    padding: 40px 0;
     font-size: 24px;
     text-align: center;
     color: #3A98B9;
@@ -278,14 +278,16 @@ article.introduce .inner {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-
+article.introduce .content-left {
+    height: 100%;
+}
 article.introduce .content-left h2 {
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 600;
     margin-bottom: 60px;
 }
 
@@ -295,17 +297,18 @@ article.introduce .content-left p {
 }
 
 article.introduce .content-right {
-    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 40px;
+    height: 100%;
 }
 
 article.introduce .content-right>div {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    align-items: flex-start;
     gap: 60px;
 }
 
@@ -313,9 +316,9 @@ article.introduce .content-right>div>h3 {
     color: #3A98B9;
     text-transform: uppercase;
     font-weight: 700;
-    width: 100px;
     font-size: 20px;
     margin-bottom: 20px;
+    width: 100px;
 }
 
 article.introduce .content-right .experience .des p:last-child {
@@ -513,7 +516,7 @@ article.clone .clone-box .box a img {
 footer {
     width: 100%;
     padding: 40px 60px;
-    background-color: #3FC1C9;
+    background-color: #000000;
     text-align: center;
     color: #fff;
     box-sizing: border-box;
