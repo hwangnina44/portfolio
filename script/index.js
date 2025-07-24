@@ -63,9 +63,4 @@ $(document).ready(function () {
         $(".des-group div.design-des").fadeIn().siblings().fadeOut();
     }); 
 
-    $(".clone-box .box.the-more a").click(function (e) {
-        e.preventDefault();
-        alert("준비중입니다!");
-    }); 
-
 });
