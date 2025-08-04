@@ -28,6 +28,7 @@ $(document).ready(function () {
         centeredSlides: true,
         slidesPerView:"auto",
         loop: true,
+        autoplay: { delay: 3000 },
         coverflowEffect: {
           rotate: 50,
           stretch: 0,
@@ -39,28 +40,5 @@ $(document).ready(function () {
           el: ".swiper-pagination",
         },
       });
-    // 
-    $(".content-box a.btn").click(function () {
-        $(this).addClass('on').siblings().removeClass('on');
-    });
-
-    // 초기 상태: concept만 보여주기
-    $(".content-box .des-group div.concept").fadeIn().siblings().hide();
-
-    $(".content-box a.concept").click(function (e) {
-        e.preventDefault();
-        $(".des-group div.concept").fadeIn().siblings().fadeOut();
-    });
-
-
-    $(".content-box a.font").click(function (e) {
-        e.preventDefault();
-        $(" .des-group div.font").fadeIn().siblings().fadeOut();
-    });
-
-    $(".content-box a.design-des").click(function (e) {
-        e.preventDefault();
-        $(".des-group div.design-des").fadeIn().siblings().fadeOut();
-    }); 
 
 });
