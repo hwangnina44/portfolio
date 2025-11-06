@@ -9,6 +9,11 @@ font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-style: normal;
 } */
+ /* .abril-fatface-regular {
+   font-family: "Abril Fatface", serif;
+   font-weight: 400;
+   font-style: normal;
+ } */
 
 html,
 body {
@@ -24,6 +29,40 @@ body {
   width: 100%;
   max-width: 1720px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
   box-sizing: border-box;
+}
+/*  영역 타이틀 */
+h2.sec-tit {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h2 .title-en {
+  color: #3A98B9;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 .title-ko {
+  font-size: 32px;
+  font-weight: 700;
+}
+/* 버튼 공통 */
+.btn {
+  width: 180px;
+  border: 1px solid #3A98B9;
+  padding: 12px 0;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3A98B9;
+  text-align: center;
+}
+
+.btn:hover {
+  border-color: #3A98B9;
+  background-color: #3A98B9;
+  color: #fff;
 }
