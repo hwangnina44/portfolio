@@ -22,7 +22,8 @@ body {
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  color: #333;
+  color: #fff;
+  background-color: #000;
 }
 
 .inner {
@@ -31,6 +32,9 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+}
+a {
+  color: #fff;
 }
 /*  영역 타이틀 */
 h2.sec-tit {
@@ -52,12 +56,12 @@ h2 .title-ko {
 /* 버튼 공통 */
 .btn {
   width: 180px;
-  border: 1px solid #3A98B9;
+  border: 1px solid #fff;
   padding: 12px 0;
   border-radius: 50px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #3A98B9;
+  color: #fff;
   text-align: center;
 }
 

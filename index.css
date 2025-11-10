@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 header {
     width: 100%;
     height: 80px;
@@ -7,7 +8,7 @@ header {
     top: 0;
     z-index: 99;
     padding: 20px 24px;
-    box-sizing: border-box;
+
 
     display: flex;
     flex-direction: row;
@@ -15,11 +16,11 @@ header {
     align-items: center;
 
 
-    background-color: rgba(255, 255, 255, 0.6);
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 0 4px #eee;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     opacity: 0;
     font-family: "Archivo", sans-serif;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -31,13 +32,11 @@ nav ul li {
     padding: 0 40px;
 }
 
-nav ul li:hover a {
-    color: #3A98B9;
-    font-weight: 700;
-
-}
 section {
+    font-family: "Archivo", sans-serif;
+    ;
 }
+
 /* 메인 */
 article.intro {
     width: 100%;
@@ -60,7 +59,7 @@ article.intro {
     text-align: center;
     font-size: 18rem;
     font-family: "Abril Fatface", serif;
-    color: #000;
+    padding-top: 120px;
 }
 
 .title h2 span {
@@ -113,7 +112,6 @@ a.title h2 span:nth-child(4) {
     animation-delay: 1.6s;
 }
 
-
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -132,96 +130,105 @@ a.title h2 span:nth-child(4) {
     }
 }
 
-.intro .profile {
+.intro .sub_profile {
+    padding: 20px 60px 120px;
+    border-top: 1px solid #fff;
+    position: relative;
 }
-.profile p {
-    font-size: 32px;
+
+.sub_profile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+.sub_profile p {
+    font-size: 24px;
     text-align: center;
     opacity: 0;
     animation-delay: 2.2s;
-    font-family: "Abril Fatface", serif;
     /*  animation: fadeInUp 1s forwards;
     animation-delay: 2.2s; */
 }
-.profile .name {
+
+.sub_profile .name {
     margin-bottom: 20px;
-}
-.profile .tell {
-    font-size: 24px;
-    letter-spacing: 1px;
-    color: #333;
 }
 
 .intro .title p span {
     display: inline-block;
 }
 
+/* 프로필 */
 article.introduce {
     width: 100%;
     padding: 120px 0;
-    margin-bottom: 120px;
-    background: url(img/bg4.jpg) no-repeat left top/contain;
 }
 
-article.introduce .inner {
+.introduce .inner {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    position: relative;
+    overflow: hidden;
 }
 
-article.introduce .content-left {
-    height: 100%;
+.content_top>div {
+    width: 50%;
 }
 
-article.introduce .content-left h2 {
+.content_left h2 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 60px;
 }
 
-article.introduce .content-left p {
+.content_left p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-article.introduce .content-right {
+article.introduce .content_right {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 40px;
-    height: 100%;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-article.introduce .content-right>div {
+.content_right>div {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: flex-start;
-    gap: 60px;
 }
 
-article.introduce .content-right>div>h3 {
+
+.content_right>div>h3 {
     color: #3A98B9;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 20px;
-    width: 100px;
+    width: 240px;
 }
 
-article.introduce .content-right .experience .des p:last-child {
+.content_right .experience .des p:last-child {
     font-size: 0;
-    position: relative
+    position: relative;
 }
 
-article.introduce .content-right>div>.des p span {
+.content_right>div>.des p span {
     color: #ccc;
     font-size: 14px;
 }
 
-article.introduce .content-right .tool .tool-box {
+.content_right .tool .tool-box {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -230,34 +237,37 @@ article.introduce .content-right .tool .tool-box {
     width: 140px;
 }
 
-article.introduce .content-right .tool p {
+.content_right .tool p {
     font-size: 0;
     width: 32px;
     height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-article.introduce .content-right .tool p.html {
-    background: url(img/html5.png) no-repeat center center / contain;
+p.html {
+    background: url(img/html5.png);
 }
 
-article.introduce .content-right .tool p.css {
-    background: url(img/css.png) no-repeat center center / contain;
+p.css {
+    background: url(img/css.png);
 }
 
-article.introduce .content-right .tool p.js {
-    background: url(img/jquery.png) no-repeat center center / contain;
+p.js {
+    background: url(img/jquery.png);
 }
 
-article.introduce .content-right .tool p.ps {
-    background: url(img/icon_photoshop.png) no-repeat center center / contain;
+p.ps {
+    background: url(img/icon_photoshop.png);
 }
 
-article.introduce .content-right .tool p.figma {
-    background: url(img/icon_figma-dark.png) no-repeat center center / contain;
+p.tool.figma {
+    background: url(img/icon_figma-dark.png);
 }
 
-article.introduce .content-right .tool p.vscode {
-    background: url(img/icons_vscode-dark.png) no-repeat center center / contain;
+p.vscode {
+    background: url(img/icons_vscode-dark.png);
 }
 
 /* puzzle */
@@ -270,6 +280,7 @@ article.puzzle {
     align-items: center;
 
     position: relative;
+    display: none;
 }
 
 article.puzzle .bg {
@@ -356,6 +367,7 @@ article.clone {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 article.clone .clone-box {
@@ -363,12 +375,12 @@ article.clone .clone-box {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:60px;
+    gap: 60px;
 }
 
 article.clone .clone-box .box {
     width: 100%;
-    height:400px;
+    height: 400px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -410,6 +422,8 @@ footer {
     text-align: center;
     color: #fff;
     box-sizing: border-box;
+    /* 삭제 */
+    display: none;
 }
 
 footer .name {
