@@ -21,6 +21,8 @@ header {
     opacity: 0;
     font-family: "Archivo", sans-serif;
     box-sizing: border-box;
+    /* 삭제 */
+    display: none;
 }
 
 nav ul {
@@ -42,6 +44,8 @@ article.intro {
     width: 100%;
     position: relative;
     box-sizing: border-box;
+    /* 삭제 */
+    display: none;
 }
 
 .intro .title {
@@ -178,11 +182,11 @@ article.introduce {
     align-items: center;
 
     position: relative;
-    overflow: hidden;
+    outline: 1px solid red;
 }
 
-.content_top>div {
-    width: 50%;
+.content_left {
+   
 }
 
 .content_left h2 {
@@ -280,7 +284,6 @@ article.puzzle {
     align-items: center;
 
     position: relative;
-    display: none;
 }
 
 article.puzzle .bg {
@@ -367,7 +370,6 @@ article.clone {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
 article.clone .clone-box {
@@ -387,7 +389,7 @@ article.clone .clone-box .box {
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-}
+}f
 
 article.clone .clone-box .box.sk {
     background-color: #CE0E2D;
