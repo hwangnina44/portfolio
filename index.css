@@ -136,6 +136,13 @@ h2 span:nth-child(10) {
     display: inline-block;
 }
 
+.sub_profile .scroll_down::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
 /* 프로필 */
 article.introduce {
     padding: 160px 0;
