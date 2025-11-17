@@ -28,7 +28,7 @@ body {
 
 .inner {
   width: 100%;
-  max-width: 1720px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -36,37 +36,20 @@ body {
 a {
   color: #fff;
 }
-/*  영역 타이틀 */
-h2.sec-tit {
-  text-align: center;
-  margin-bottom: 80px;
+
+.content_title h2 {
+  font-size: 60px;
+  font-weight: 900;
+  opacity: 0.2;
+  font-family: "Archivo", sans-serif;
 }
 
-h2 .title-en {
-  color: #3A98B9;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-family: 'Nunito', sans-serif;
-}
-
-h2 .title-ko {
-  font-size: 32px;
-  font-weight: 700;
-}
 /* 버튼 공통 */
 .btn {
-  width: 180px;
+  width: 160px;
   border: 1px solid #fff;
   padding: 12px 0;
   border-radius: 50px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   color: #fff;
   text-align: center;
-}
-
-.btn:hover {
-  border-color: #3A98B9;
-  background-color: #3A98B9;
-  color: #fff;
 }
