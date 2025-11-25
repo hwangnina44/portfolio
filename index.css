@@ -119,6 +119,7 @@ h2 span:nth-child(10) {
         transform: translateY(20px);
     }
 }
+
 .sub_profile p {
     font-size: 24px;
     text-align: center;
@@ -147,6 +148,7 @@ h2 span:nth-child(10) {
 article.introduce {
     padding: 160px 0;
 }
+
 .content {
     display: flex;
     flex-direction: row;
@@ -245,6 +247,7 @@ p.vscode {
 article.puzzle {
     padding: 160px 0;
 }
+
 .project_overview p {
     margin-bottom: 40px;
 }
@@ -294,56 +297,104 @@ article.puzzle {
 /* 클론 */
 article.clone {
     width: 100%;
-    margin-bottom: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 160px 0;
 }
 
-article.clone .clone-box {
+ul.clone_list {
+    padding-top: 60px;
+}
+
+ul.clone_list .list {}
+
+.clone_list li .clone_title {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-article.clone .clone-box .box {
+.clone_title h3 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.clone_title .down {
+    width: 40px;
+    cursor: pointer;
+}
+.down img {
     width: 100%;
+    display: block;
+}
+
+.clone_des {
+    width: 100%;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clone_des .clone_preview {
+    position: relative;
+    width: 375px;
     height: 400px;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
 }
 
-article.clone .clone-box .box.sk {
-    background-color: #CE0E2D;
+.clone_preview video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sk {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
 }
 
-article.clone .clone-box .box.the-more {
-    background-color: #000;
+.sk p {
+    font-size: 30px;
+    font-weight: 900;
+    word-break: keep-all;
+}
+.sk p .red {
+    color:#CE0E2D;
+    font-weight: 900;
 }
 
-article.clone .clone-box .box a {
+.sk p .orange {
+    color: #EE7623;
+}
+
+.clone_des .project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+}
+.clone_des .project h4 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.project .project_des {
+    margin-bottom: 40px;
+}
+.project .page span{
+    font-weight: 900;
+    padding-right: 20px;
 }
 
-article.clone .clone-box .box a:hover img {
-    width: 200px;
-    transform: scale(1.2);
-}
-
-article.clone .clone-box .box a img {
-    width: 200px;
-    display: block;
-    transition: all 1s ease-out;
+.project .btn {
+    margin-top: 65px;
 }
 
 footer {
