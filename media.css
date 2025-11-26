@@ -1,191 +1,108 @@
 @charset "utf-8";
 @media all and (max-width: 1440px) {
 
-    article.intro .title h2 {
-        font-size: 8rem;
+    .porfolio_title h2 {
+        font-size: 12rem;
     }
-
-    article.puzzle .bg {
-        font-size: 11.5rem;
-    }
-
-    article.introduce .content-left h2 {
-        font-size: 40px;
-    }
-
-    article.puzzle .text-box p {
-        font-size: 14px;
-    }
-
 
 }
 
 @media all and (max-width: 1024px) {
-
-    .container>article {
-        margin-bottom: 60px;
+    .porfolio_title h2 {
+        font-size: 8rem;
     }
 
-    .container>article.intro {
-        margin-bottom: 0;
+    .clone_des .clone_preview {
+        width: 320px;
+        height: 320px;
     }
-
-    article.intro .title h2 {
-        font-size: 5rem;
-    }
-
-    article.introduce .content-left h2 {
-        font-size: 40px;
-        margin-bottom: 40px;
-    }
-
-    article.introduce .content-left p {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-
-    article.puzzle .bg {
-        font-size: 10rem;
-    }
-
-    article.puzzle .text-box p.tool {
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-    article.puzzle .text-box p.period {
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-    article.intro .title h1 {
-        font-size: 4rem;
-    }
-
-
 }
 
 @media all and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
     nav ul li {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
-    h2 .title-en {
-        font-size: 16px;
+    article {
+        padding: 80px 0;
     }
 
-    h2 .title-ko {
-        font-size: 24px;
+    .content {
+        flex-direction: column;
+        align-items: center;
     }
 
-    h2.sec-tit {
-        margin-bottom: 40px;
+    .content_title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .content_right h4 {
+        font-size: 20px;
+    }
+
+    .porfolio_title h2 {
+        font-size: 6rem;
+    }
+
+    .content_right .tool .tool-box {
+        gap: 8px;
+    }
+
+    .tool .tool-box p {
+        width: 40px;
+        height: 40px;
+    }
+
+    .clone_des {
+        padding: 40px 20px;
+    }
+
+    .clone_des .project h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 
     .btn {
         width: 120px;
-        font-size: 14px;
+        padding: 10px 0;
     }
 
-    article.introduce .inner {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 40px;
-    }
-
-    article.introduce .content-right {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    article.introduce .content-right>div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0px;
-    }
-
-    article.intro .title h2 {
-        font-size: 3rem;
-    }
-
-    article.introduce .content-left h2 {
-        font-size: 32px;
-        margin-bottom: 40px;
-    }
-
-    article.introduce .content-left p {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
-    article.puzzle .bg {
-        font-size: 7.5rem;
-    }
-
-    article.puzzle .bg br {
-        display: block;
-    }
-
-    article.puzzle .text-box {
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 20px;
-    }
-
-
-    article.puzzle .text-box .btn-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        gap: 10px;
-    }
-
-    article.clone {
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    article.clone .clone-box .box a {
-        width: 180px;
-        height: 180px;
+    .project .btn {
+        margin-top: 40px;
     }
 }
 
-@media all and (max-width: 700px) {
-    article.clone .clone-box {
+@media all and (max-width: 720px) {
+    .clone_des {
         flex-direction: column;
         gap: 20px;
     }
 
-    article.clone .clone-box .box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
+    .clone_des .clone_preview {
+        width: 100%;
     }
 
-    article.clone .clone-box .box p {
-        width: 100px;
+    .clone_des .project {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 660px) {
+    .content_title h2 {
+        font-size: 60px;
     }
 
-    article.clone .clone-box .box p span {
-        display: block;
-        margin-bottom: 4px
+    .content_left h3 {
+        font-size: 24px;
     }
 }
 
 @media all and (max-width: 520px) {
+    .porfolio_title h2 {
+        font-size: 4rem;
+    }
+
     article.introduce .content-right {
         width: 100%;
         display: flex;
@@ -194,70 +111,27 @@
         gap: 20px;
         flex-wrap: wrap;
     }
+
+    .clone_des .project {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 480px) {
-    header {
-        padding: 0 12px;
-    }
-
-    nav ul li {
-        font-size: 14px;
-        padding: 0 8px;
-    }
-
-    .container>article {
-        margin-bottom: 40px;
-    }
-
-    .container>article.intro {
-        margin-bottom: 0;
-    }
-
-    h2 .title-en {
-        font-size: 14px;
-    }
-
-    h2 .title-ko {
+    .content_title h2 {
         font-size: 20px;
-    }
-
-    h2.sec-tit {
-        margin-bottom: 20px;
-    }
-
-    article.intro .title h2 {
-        font-size: 2rem;
     }
 }
 
 @media all and (max-width: 425px) {
-    article.puzzle .bg {
-        font-size: 6.5rem;
-    }
 
-    .swiper>.swiper-wrapper>.swiper-slide {
-        width: 360px;
-    }
 }
 
 @media all and (max-width: 375px) {
-    article.introduce .content-left h2 {
-        font-size: 24px;
-    }
 
-    article.puzzle .bg {
-        font-size: 5.5rem;
-    }
-
-    .swiper>.swiper-wrapper>.swiper-slide {
-        width: 300px;
-    }
 }
 
 
 @media all and (max-width: 320px) {
-    .swiper>.swiper-wrapper>.swiper-slide {
-        width: 260px;
-    }
+
 }

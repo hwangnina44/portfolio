@@ -25,7 +25,9 @@ body {
   color: #fff;
   background-color: #000;
 }
-
+article {
+  padding: 160px 0;
+}
 .inner {
   width: 100%;
   max-width: 1280px;
@@ -38,7 +40,7 @@ a {
 }
 
 .content_title h2 {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 900;
   opacity: 0.2;
   font-family: "Archivo", sans-serif;

@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
         $("article.intro .title p").animate({
-            opacity: 1
+            opacity: 0
         }, 1000);
     }, 3000);
     //  스와이퍼
