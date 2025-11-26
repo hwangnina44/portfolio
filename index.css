@@ -47,7 +47,7 @@ nav ul li {
 
 .porfolio_title h2 {
     text-align: center;
-    font-size: 12rem;
+    font-size: 16rem;
     font-family: "Abril Fatface", serif;
     padding-top: 120px;
 }
@@ -120,6 +120,12 @@ h2 span:nth-child(10) {
     }
 }
 
+.sub_profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sub_profile p {
     font-size: 24px;
     text-align: center;
@@ -132,16 +138,52 @@ h2 span:nth-child(10) {
 .sub_profile .name {
     margin-bottom: 20px;
 }
-
+.year {padding-bottom: 24px;}
 .intro .title p span {
     display: inline-block;
 }
 
-.sub_profile .scroll_down::before {
+.sub_profile .scroll_down {
+    position: relative;
+    animation: scroll 3s ease-in infinite;
+}
+
+.scroll_down::before {
     content: "";
     display: block;
     width: 24px;
     height: 24px;
+    background: url(img/scroll.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.scroll_down::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(img/scroll.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+@keyframes scroll {
+    0% {
+        opacity:1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* 프로필 */
@@ -324,6 +366,7 @@ ul.clone_list .list {}
     width: 40px;
     cursor: pointer;
 }
+
 .down img {
     width: 100%;
     display: block;
@@ -354,11 +397,12 @@ ul.clone_list .list {}
     height: 100%;
     object-fit: cover;
 }
+
 .sk {
     position: absolute;
     left: 50%;
     top: 30%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .sk p {
@@ -366,8 +410,9 @@ ul.clone_list .list {}
     font-weight: 900;
     word-break: keep-all;
 }
+
 .sk p .red {
-    color:#CE0E2D;
+    color: #CE0E2D;
     font-weight: 900;
 }
 
@@ -380,15 +425,18 @@ ul.clone_list .list {}
     flex-direction: column;
     width: 50%;
 }
+
 .clone_des .project h4 {
     font-size: 24px;
     font-weight: 900;
     margin-bottom: 40px;
 }
+
 .project .project_des {
     margin-bottom: 40px;
 }
-.project .page span{
+
+.project .page span {
     font-weight: 900;
     padding-right: 20px;
 }
@@ -399,10 +447,11 @@ ul.clone_list .list {}
 
 footer {
     width: 100%;
-    padding: 40px 60px;
+    padding: 80px 0;
     background-color: #000000;
     text-align: center;
     color: #fff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
 }
 

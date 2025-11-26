@@ -18,10 +18,7 @@ $(document).ready(function () {
             opacity: 1
         }, 1000);
     }, 3000);
-
-
-
-
+    //  스와이퍼
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
@@ -82,4 +79,22 @@ $(function () {
         threshold: 0.8 // 20% 정도 보이면 실행 (자연스럽게)
     });
     observer.observe(previewTarget);
+    $('.clone_des').hide();
+    $('.clone_des').first().show();
+    $('.down').on('click', function () {
+        const box = $(this).closest('li').find('.clone_des');
+
+        if (box.is(':visible')) {
+            box.slideUp(250);
+        } else {
+            box
+                .css('display', 'flex')
+                .hide()
+                .slideDown(250);
+        }
+
+        $(this).toggleClass('rotate');
+    });
+
+
 });
