@@ -9,7 +9,7 @@ font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-style: normal;
 } */
- /* .abril-fatface-regular {
+/* .abril-fatface-regular {
    font-family: "Abril Fatface", serif;
    font-weight: 400;
    font-style: normal;
@@ -25,9 +25,11 @@ body {
   color: #fff;
   background-color: #000;
 }
+
 article {
   padding: 160px 0;
 }
+
 .inner {
   width: 100%;
   max-width: 1280px;
@@ -35,6 +37,7 @@ article {
   padding: 0 20px;
   box-sizing: border-box;
 }
+
 a {
   color: #fff;
 }
@@ -60,3 +63,41 @@ a {
   transform: rotate(180deg);
 }
 
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  z-index: 99;
+
+  display: none;
+}
+
+.close_btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 24px;
+  top: 27px;
+  z-index: 9999;
+}
+.modal ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.modal_list {
+  font-weight: 500;
+  font-size: 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}

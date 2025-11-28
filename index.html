@@ -26,11 +26,26 @@
         <h1><a href="index.html">Portfolio</a></h1>
         <nav>
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#puzzle">redesign</a></li>
-                <li><a href="#clone">clone</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#puzzle">Redesign</a></li>
+                <li><a href="#clone">Clone</a></li>
             </ul>
+        </nav>
+        <div class="nav_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="modal">
+            <div class="close_btn">
+                <img src="img/close.png" alt="닫기버튼">
+            </div>
+            <ul>
+                <li class="modal_list"><a href="#about">About</a></li>
+                <li class="modal_list"><a href="#puzzle">Redesign</a></li>
+                <li class="modal_list"><a href="#clone">Clone</a></li>
+            </ul>
+        </div>
     </header>
     <section>
         <!-- main -->
@@ -129,9 +144,9 @@
                                 마치 케어받는 듯한 따뜻한 경험을 전하고자 합니다.
                             </p>
                             <div class="project_info">
-                                <p>기간 2025.05 ~ 06</p>
-                                <p>프로그램 Ps, Figma, Vscode</p>
-                                <p>기여도 100%</p>
+                                <p><span>기간</span> 2025.05 ~ 06</p>
+                                <p><span>프로그램</span> Ps, Figma, Vscode</p>
+                                <p><span>기여도</span> 100%</p>
                             </div>
                         </div>
                         <div class="btn_group">
@@ -151,7 +166,7 @@
             </div>
         </article>
         <!-- clon coding -->
-        <article class="clone">
+        <article class="clone" id="clone">
             <div class="inner">
                 <div class="content_title">
                     <h2>Clone</h2>
@@ -231,9 +246,9 @@
                         </div>
                         <div class="clone_des">
                             <div class="clone_preview">
-                               <div class="img_box">
-                                <img src="img/smart.jpg" alt="스마트글라스">
-                               </div>
+                                <div class="img_box">
+                                    <img src="img/smart.jpg" alt="스마트글라스">
+                                </div>
                             </div>
                             <div class="project">
                                 <h4>스마트글라스 (반응형 웹)</h4>

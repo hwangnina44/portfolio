@@ -95,6 +95,14 @@ $(function () {
 
         $(this).toggleClass('rotate');
     });
-
-
 });
+
+$(document).ready(function () {
+    $('.nav_btn').click(function () {
+        $('.modal').fadeIn(200);
+    });
+    $('.close_btn').click(function () {
+        console.log('클릭');
+        $('.modal').fadeOut(200);
+    });
+})
