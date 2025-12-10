@@ -392,6 +392,9 @@ ul.clone_list .list {}
     width: 40px;
     cursor: pointer;
 }
+.down .on {
+    transform: rotate(180deg);
+}
 
 .down img {
     width: 100%;
@@ -497,21 +500,21 @@ footer .name {
     margin-bottom: 20px;
 }
 
-footer .name span:first-child {
+.name p:first-child {
     font-weight: 100;
 }
 
-footer .name span:last-child {
+.name p:last-child {
     font-size: 24px;
     font-weight: 400;
 }
 
-footer p {
+footer .email {
     display: inline-block;
     margin-right: 20px;
     opacity: 0.8;
 }
 
-footer p b {
+footer .tel b {
     margin-right: 6px;
 }
